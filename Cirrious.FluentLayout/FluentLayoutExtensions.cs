@@ -8,6 +8,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UIKit;
+using ObjCRuntime;
 
 namespace Cirrious.FluentLayouts.Touch
 {
@@ -26,6 +27,7 @@ namespace Cirrious.FluentLayouts.Touch
             return view.WithLayoutAttribute(NSLayoutAttribute.Left);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public static UIViewAndLayoutAttribute LeftMargin(this UIView view)
         {
             return view.WithLayoutAttribute(NSLayoutAttribute.LeftMargin);
@@ -36,6 +38,7 @@ namespace Cirrious.FluentLayouts.Touch
             return view.WithLayoutAttribute(NSLayoutAttribute.Right);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public static UIViewAndLayoutAttribute RightMargin(this UIView view)
         {
             return view.WithLayoutAttribute(NSLayoutAttribute.RightMargin);
@@ -46,6 +49,7 @@ namespace Cirrious.FluentLayouts.Touch
             return view.WithLayoutAttribute(NSLayoutAttribute.Top);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public static UIViewAndLayoutAttribute TopMargin(this UIView view)
         {
             return view.WithLayoutAttribute(NSLayoutAttribute.TopMargin);
@@ -56,6 +60,7 @@ namespace Cirrious.FluentLayouts.Touch
             return view.WithLayoutAttribute(NSLayoutAttribute.Bottom);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public static UIViewAndLayoutAttribute BottomMargin(this UIView view)
         {
             return view.WithLayoutAttribute(NSLayoutAttribute.BottomMargin);
@@ -71,6 +76,7 @@ namespace Cirrious.FluentLayouts.Touch
             return view.WithLayoutAttribute(NSLayoutAttribute.Trailing);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public static UIViewAndLayoutAttribute TrailingMargin(this UIView view)
         {
             return view.WithLayoutAttribute(NSLayoutAttribute.TrailingMargin);
@@ -81,6 +87,7 @@ namespace Cirrious.FluentLayouts.Touch
             return view.WithLayoutAttribute(NSLayoutAttribute.Leading);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public static UIViewAndLayoutAttribute LeadingMargin(this UIView view)
         {
             return view.WithLayoutAttribute(NSLayoutAttribute.LeadingMargin);
@@ -91,6 +98,7 @@ namespace Cirrious.FluentLayouts.Touch
             return view.WithLayoutAttribute(NSLayoutAttribute.CenterX);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public static UIViewAndLayoutAttribute CenterXWithinMargins(this UIView view)
         {
             return view.WithLayoutAttribute(NSLayoutAttribute.CenterXWithinMargins);
@@ -101,6 +109,7 @@ namespace Cirrious.FluentLayouts.Touch
             return view.WithLayoutAttribute(NSLayoutAttribute.CenterY);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public static UIViewAndLayoutAttribute CenterYWithinMargins(this UIView view)
         {
             return view.WithLayoutAttribute(NSLayoutAttribute.CenterYWithinMargins);

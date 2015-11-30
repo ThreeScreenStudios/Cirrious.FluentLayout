@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using UIKit;
 using Foundation;
+using ObjCRuntime;
 
 namespace Cirrious.FluentLayouts.Touch
 {
@@ -87,6 +88,7 @@ namespace Cirrious.FluentLayouts.Touch
             return SetSecondItem(view2, NSLayoutAttribute.Left);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public FluentLayout LeftMarginOf(NSObject view2)
         {
             return SetSecondItem(view2, NSLayoutAttribute.LeftMargin);
@@ -97,6 +99,7 @@ namespace Cirrious.FluentLayouts.Touch
             return SetSecondItem(view2, NSLayoutAttribute.Right);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public FluentLayout RightMarginOf(NSObject view2)
         {
             return SetSecondItem(view2, NSLayoutAttribute.RightMargin);
@@ -107,6 +110,7 @@ namespace Cirrious.FluentLayouts.Touch
             return SetSecondItem(view2, NSLayoutAttribute.Top);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public FluentLayout TopMarginOf(NSObject view2)
         {
             return SetSecondItem(view2, NSLayoutAttribute.TopMargin);
@@ -117,6 +121,7 @@ namespace Cirrious.FluentLayouts.Touch
             return SetSecondItem(view2, NSLayoutAttribute.Bottom);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public FluentLayout BottomMarginOf(NSObject view2)
         {
             return SetSecondItem(view2, NSLayoutAttribute.BottomMargin);
@@ -132,6 +137,7 @@ namespace Cirrious.FluentLayouts.Touch
             return SetSecondItem(view2, NSLayoutAttribute.Trailing);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public FluentLayout TrailingMarginOf(NSObject view2)
         {
             return SetSecondItem(view2, NSLayoutAttribute.TrailingMargin);
@@ -142,6 +148,7 @@ namespace Cirrious.FluentLayouts.Touch
             return SetSecondItem(view2, NSLayoutAttribute.Leading);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public FluentLayout LeadingMarginOf(NSObject view2)
         {
             return SetSecondItem(view2, NSLayoutAttribute.LeadingMargin);
@@ -152,6 +159,7 @@ namespace Cirrious.FluentLayouts.Touch
             return SetSecondItem(view2, NSLayoutAttribute.CenterX);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public FluentLayout CenterXWithinMarginsOf(NSObject view2)
         {
             return SetSecondItem(view2, NSLayoutAttribute.CenterXWithinMargins);
@@ -162,6 +170,7 @@ namespace Cirrious.FluentLayouts.Touch
             return SetSecondItem(view2, NSLayoutAttribute.CenterY);
         }
 
+        [Introduced(PlatformName.iOS, 8, 0, PlatformArchitecture.All)]
         public FluentLayout CenterYWithinMarginsOf(NSObject view2)
         {
             return SetSecondItem(view2, NSLayoutAttribute.CenterYWithinMargins);
